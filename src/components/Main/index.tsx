@@ -1,12 +1,26 @@
 import React from 'react';
 
-import {Container,Header,BackIcon,ProfileInfo,BottomMenu,HomeIcon,SearchIcon,BellIcon,EmailIcon} from './styles';
+import ProfilePage from '../ProfilePage';
+
+import {
+    Container,
+    Header,
+    BackIcon,
+    ProfileInfo,
+    BottomMenu,
+    HomeIcon,
+    SearchIcon,
+    BellIcon,
+    EmailIcon,
+} from './styles';
 
 const Main: React.FC = () => {
     return (
         <Container>
             <Header>
-                <button><BackIcon /></button>
+                <button>
+                    <BackIcon />
+                </button>
                 <ProfileInfo>
                     <strong>Felipe</strong>
                     <span>12 tweets</span>
@@ -16,14 +30,13 @@ const Main: React.FC = () => {
             {/* <ProfilePage /> */}
 
             <BottomMenu>
-                <HomeIcon className="active"/>
+                <HomeIcon className="active" />
                 <SearchIcon />
                 <BellIcon />
                 <EmailIcon />
             </BottomMenu>
-
         </Container>
     );
-}
+};
 
 export default Main;
